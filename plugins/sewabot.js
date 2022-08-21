@@ -10,19 +10,11 @@ let handler = async (m, { conn }) => {
   let d = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
-  description: ` *• SEWA BOT & UP TO PREMIUM •*
-        
-1. Grup / 30 Hari
-Rp. 15.000 Dana
-Rp. 15.000 Pulsa
-
-2. Premium / 30 Hari
-Rp. 10.000 Dana
-Rp. 10.000 Pulsa
-
-3. Premium + Grup / 30 Hari
-Rp. 20.000 Dana
-Rp. 20.000 Pulsa
+  description: ` *BOT ON 24 JAM & BISA BUAT PRICELIST*
+╭──「 *_SEWA BOT_* 」
+│❏  1 MINGGU : IDR 3.000 (3K)
+│❏  1 BULAN : IDR 6.000 (6K)
+│❏  PERMANEN : IDR 10.000 (10K)
 
 wa.me/${owner[0]}
 *Bukan Bot!!!*
